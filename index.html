@@ -11,22 +11,7 @@
     <!-- <iframe style="display: none;" width="0" height="0" src="https://www.youtube.com/embed/0_e1bmlw8nM?rel=0&autoplay=1" frameborder="0" allow="autoplay;" allow="fullscreen"></iframe> -->
   </head>
   <body>
-    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Bahrom Bek</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">About</a>
-            <a class="nav-link" href="#">Projects</a>
-            <a class="nav-link" href="#">Contact</a>
-          </div>
-        </div>
-      </div>
-    </nav> -->
-
+    
     <div class="container">
       <div class="row">
         <div class="col">
@@ -139,10 +124,38 @@
               </div>
             </div>
           </div>
+          
         </div>
       </div>
+
+      <div class="right-volume">
+        <img src="./images/off.png" id="icon">
+      </div>
+
+      <audio autoplay id="mysong" loop="true">
+        <source src="./music/1.mp3" type="audio/mp3">
+      </audio>
     </div>
 
+    <script>
+      
+      var mysong = document.getElementById("mysong");
+      var icon = document.getElementById("icon");
+
+      icon.onclick = function(){
+        if (mysong.paused){
+            mysong.play();
+            icon.src = "./images/on.png";
+        }
+        else{
+            mysong.pause();
+            icon.src = "./images/off.png";
+        }
+
+
+      }
+
+    </script>
     <script
       src="https://kit.fontawesome.com/dd8c49730d.js"
       crossorigin="anonymous"
