@@ -17,6 +17,12 @@ body {
   background-attachment:fixed;
   z-index: 0;
 }
+@media only screen and (max-width: 600px) {
+  /* Styles for mobile devices */
+  body {
+    background-attachment: fixed;
+  }
+}
 .row {
   text-align: center;
 }
