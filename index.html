@@ -6,8 +6,8 @@
     <title>Bahrom Bek</title>
 
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="glitch.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/glitch.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link rel="shortcut icon" href="">
   </head>
   <body>
@@ -128,35 +128,22 @@
         </div>
       </div>
 
-      <div class="right-volume">
+      <div id="right-volume">
         <img src="./images/off.png" id="icon">
+
+        <audio id="mysong" >
+          <source id="song" src="./music/tyler.mp3" type="audio/mp3">
+        </audio>
+
       </div>
-
-      <audio autoplay id="mysong" loop="true">
-        <source src="./music/1.mp3" type="audio/mp3">
-      </audio>
-    </div>
-
-    <script>
       
-      var mysong = document.getElementById("mysong");
-      var icon = document.getElementById("icon");
+    </div>
+    
 
-      icon.onclick = function(){
-        if (mysong.paused){
-            mysong.play();
-            icon.src = "./images/on.png";
-        }
-        else{
-            mysong.pause();
-            icon.src = "./images/off.png";
-        }
-
-
-      }
-
-    </script>
+  
     <script src="https://kit.fontawesome.com/dd8c49730d.js" crossorigin="anonymous"></script>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/music.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
