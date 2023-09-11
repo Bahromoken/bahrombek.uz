@@ -40,7 +40,8 @@ var backgroundImage = [
       "heart.mp3",
       "disk.mp3",
       "i.mp3",
-      "left-me.mp3"
+      "left-me.mp3",
+      "rdr2.mp3"
     ];
 
     var i = "./music/" + backgroundMusic[Math.floor(Math.random() * backgroundMusic.length)];
