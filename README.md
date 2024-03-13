@@ -1,3 +1,3 @@
 # bahrombek.uz
 My Portfolio Website
-Link: http://bahrombek.uz/
+Link: https://bahrom04.github.io/bahrombek.uz/
