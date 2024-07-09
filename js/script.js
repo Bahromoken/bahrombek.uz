@@ -25,22 +25,12 @@ var backgroundImage = [
 
     var backgroundMusic = [
       "1.mp3",
-      "asf.mp3",
       "carti.mp3",
-      "giga.mp3",
       "tyler.mp3",
       "patrick.mp3",
-      "b.mp3",
-      "heart.mp3",
       "girl.mp3",
-      "sigma.mp3",
-      "durden.mp3",
-      "bully.mp3",
       "carti.mp3",
-      "heart.mp3",
-      "disk.mp3",
       "i.mp3",
-      "left-me.mp3",
       "rdr2.mp3"
     ];
 
