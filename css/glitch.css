@@ -37,7 +37,7 @@
   content: attr(data-text);
   position: absolute;
   top: 0;
-  color: #fff;
+  color: #ffffff;
   overflow: hidden;
 }
 
